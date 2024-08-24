@@ -8,12 +8,12 @@ import java.time.LocalDateTime
 import kotlin.time.Duration
 
 object TimeConfig {
-    const val HOLD_TIME = "0:49"
+    const val HOLD_TIME = "0:11"
     private const val MATURITY_TIME = "2024/8/24 3:05"
     const val CROP_HOURS = 16
 
     private const val CROP_MATURITY_RATIO = TimeRatioConfig.CROP_MATURITY_RATIO
-    private const val MATURITY_WATER_RATIO = TimeRatioConfig.MATURITY_WATER_RATIO
+    const val MATURITY_WATER_RATIO = TimeRatioConfig.MATURITY_WATER_RATIO
     private const val THIRD_WATER_RATIO = TimeRatioConfig.THIRD_WATER_RATIO
 
 
