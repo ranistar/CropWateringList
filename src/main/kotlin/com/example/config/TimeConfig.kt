@@ -8,7 +8,7 @@ import java.time.LocalDateTime
 import kotlin.time.Duration
 
 object TimeConfig {
-    const val HOLD_TIME = "2:19"
+    const val HOLD_TIME = "0:49"
     private const val MATURITY_TIME = "2024/8/24 3:05"
     const val CROP_HOURS = 16
 
