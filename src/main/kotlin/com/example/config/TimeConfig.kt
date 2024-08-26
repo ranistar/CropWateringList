@@ -3,19 +3,20 @@ package com.example.config
 import com.example.extensions.parseHours
 import com.example.extensions.plus
 import org.example.com.example.config.TimeRatioConfig
+import org.example.com.example.extensions.toDuration
 import org.example.com.example.extensions.toLocalDateTime
 import java.time.LocalDateTime
 import kotlin.time.Duration
 
 object TimeConfig {
     const val HOLD_TIME = "0:11"
-    private const val MATURITY_TIME = "2024/8/24 3:05"
+    private const val MATURITY_TIME = "2024/8/26 10:25"
     const val CROP_HOURS = 16
 
     private const val CROP_MATURITY_RATIO = TimeRatioConfig.CROP_MATURITY_RATIO
     const val MATURITY_WATER_RATIO = TimeRatioConfig.MATURITY_WATER_RATIO
     private const val THIRD_WATER_RATIO = TimeRatioConfig.THIRD_WATER_RATIO
-
+    val holdTime = HOLD_TIME.toDuration()
 
     val maturityTime: LocalDateTime = MATURITY_TIME.toLocalDateTime()
 
