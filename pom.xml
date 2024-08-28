@@ -23,6 +23,10 @@
             <name>0110.be repository</name>
             <url>https://mvn.0110.be/releases</url>
         </repository>
+        <repository>
+            <id>takari-repo</id>
+            <url>https://repository.takari.io/nexus/content/repositories/releases/</url>
+        </repository>
     </repositories>
 
     <build>
@@ -100,6 +104,24 @@
                         <goals>
                             <goal>single</goal>
                         </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>build-helper-maven-plugin</artifactId>
+                <version>3.2.0</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>add-source</goal>
+                        </goals>
+                        <phase>process-resources</phase>
+                        <configuration>
+                            <sources>
+                                <source>src/main/additional-source</source>
+                            </sources>
+                        </configuration>
                     </execution>
                 </executions>
             </plugin>
