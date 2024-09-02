@@ -15,7 +15,7 @@ import org.example.com.example.reminder.wateringReminder
 import java.time.Duration
 import java.time.LocalDateTime
 
-fun main() {
+fun perfectWateringApp() {
     // 获取当前时间
     val now = LocalDateTime.now()
     // 设置停止时间，例如当前时间加2分钟
@@ -55,4 +55,7 @@ fun main() {
             delay(delayMillis)
         }
     }
+}
+fun main() {
+    perfectWateringApp()
 }
